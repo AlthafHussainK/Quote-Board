@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/static/login.css" type="text/css">
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block main %}
+<header class="masthead">
+    <form action="/login" method="post">
+       
+        <div class="login text-center">
+            <div class="login-screen">
+                <div class="app-title">
+                    <h1>LOGIN</h1>
+                </div>
+                <div class="login-form">
+                    <div class="control-group">
+                        <input type="text" autofocus class="login-field" value="" placeholder="username" name="username" required>
+                        
+                    </div>
+                    <div class="control-group">
+                        <input type="password" class="login-field" value="" placeholder="password" name="password" required>
+                        
+                    </div>
+                    <input type="submit" value="LogIn" class="btn btn-primary btn-large btn-block">
+                </div>
+                <p> or <a href="/signup" style="text-decoration: none;">Signup now!</a></p>
+            </div>
+            </div>  
+       
+    </form>
+</header>
+{% endblock %}

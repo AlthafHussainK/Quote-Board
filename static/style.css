@@ -1,0 +1,244 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+.navbar {
+  background-color: #2d3436;
+}
+.navbar-header {
+  text-decoration: none;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+.navbar .a-link {
+  text-decoration: none;
+  text-align: right;
+  font-size: 20px;
+  color: white;
+}
+.sidenav {
+  padding-top:10px;
+  background-color: #636e72 ;
+  
+}
+.sidenav .title {
+  font-size: 25px;
+  padding-left: 2px;
+  text-decoration: none;
+
+}
+.sidenav a {
+  padding-left: 2px;
+  text-decoration: none;  
+  font-size: 20px;
+  color: #dfe6e9;
+  display: block;
+}
+.sidenav a:hover {
+  color: white;
+}
+
+
+.flex-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  
+  padding: 15px;
+}
+.flex-container .q-card {
+  background-color: #00b894;
+  color: white;
+  box-shadow: 6px 0px 18px -6px rgba(0, 0, 0, 0.4);
+  -webkit-border-radius: 5%;
+  border-radius: 5%;
+  border-style: solid;
+  border-width: 3px;
+  max-width: 250px;
+  min-width: 200px;
+  max-height: 400px;
+  min-height: 300px;
+  margin: 8px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  padding: 5px;
+  font-size: 15px;
+}
+.flex-container .q-card:hover {
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 123, 123, 0.3);
+  box-shadow: 0px 0px 15px 5px rgba(36, 224, 33, 0.61);
+  transform: scale(1.02);
+  transition: all 0.5s ease-in-out;
+
+}
+.flex-container .q-card .card-body p {
+  color: white;
+}
+.flex-container .q-card .card-body-author p {
+  font-style: oblique;
+  color: white;
+}
+.flex-container .q-card .card-actions {
+border-top: 1px solid white;
+display: flex;
+-webkit-box-pack: justify;
+align-content: center;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+cursor: pointer;
+}
+.flex-container .q-card .card-actions i {
+
+margin-top: 6px;
+color: white;
+border: 2px solid transparent;
+padding: 4px;
+}
+.flex-container .q-card .card-actions i:hover {
+background: #fefffe70;
+border: 2px solid #fefffe70;
+border-radius: 4px;
+}
+
+a {
+  color: #fdcc52;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+a:hover, a:focus {
+  color: #fcbd20;
+}
+
+hr {
+  max-width: 100px;
+  margin: 25px auto 0;
+  border-width: 1px;
+  border-color: rgba(34, 34, 34, 0.1);
+}
+
+hr.light {
+  border-color: white;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 100px 0;
+}
+
+section h2 {
+  font-size: 50px;
+}
+
+
+header.masthead {
+  position: center;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: white;
+  background: url("img/bg-pattern.png"), #00b894;
+  background: url("img/bg-pattern.png"), -webkit-gradient(linear, right top, left top, from(#00b894), to(#0984e3));
+  background: url("img/bg-pattern.png"), linear-gradient(to left, #00b894, #0984e3);
+}
+
+header.masthead .header-content {
+  max-width: 500px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+header.masthead .header-content h1 {
+  font-size: 48px;
+}
+
+header.masthead .device-container {
+  max-width: 325px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header.masthead .device-container .screen img {
+  border-radius: 3px;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 775px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.masthead .header-content {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  header.masthead .header-content h1 {
+    font-size: 50px;
+  }
+  header.masthead .device-container {
+    max-width: 325px;
+  }
+}
+
+
+.bg-primary {
+  background: #fdcc52;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdcc52), to(#fdc539));
+  background: linear-gradient(#fdcc52, #fdc539);
+}
+
+.text-primary {
+  color: #fdcc52;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.btn-outline {
+  color: white;
+  border: 1px solid;
+  border-color: white;
+}
+
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+  color: white;
+  border-color: rgb(0, 140, 255);
+  background-color: blue;
+}
+
+.btn {
+  border-radius: 300px;
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.btn-xl {
+  font-size: 11px;
+  padding: 15px 45px;
+}
